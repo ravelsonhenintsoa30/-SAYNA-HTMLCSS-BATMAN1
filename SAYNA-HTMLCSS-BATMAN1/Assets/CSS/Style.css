@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../Police/Rajdhani-Medium.ttf);   
+}
+
+@font-face {
+    font-family: 'Space-Grotesk';
+    src: url(../Police/SpaceGrotesk-Medium.ttf);
+}
+
+:root {
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --blue-color: #19587d;
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+button {
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main {
+    border: 2px solid rgba(109, 34, 34, 0.7);
+    border-bottom: 0;
+}
+
+footer {
+    border: 2px solid #C4C4C4;
+    border-top: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container .text {
+    margin: auto;
+    padding-top: 300px;
+    text-align: center;
+    width: 600px;
+    font-size: 22px;
+    font-family: 'Space-Grotesk';
+}
+
+.container .titre {
+    margin: 50px;
+    font-family: 'rajdhani';
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.cta .btn {
+    text-decoration: none;
+    color: var(--white-color);
+    text-align: center;
+    margin: 15px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.40), rgba(137, 0, 9, 0.60));
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'rajdhani';
+}
+
+.cta .btn:hover {
+    background-image: linear-gradient(to right, rgba(237, 222, 191), rgba(137, 0, 9));
+}
+
+#Hero .fleche-part1 {
+    margin-top: 150px;
+}
+
+body {
+    background-image: url(../Illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.822);
+    font-family: 'Space-Grotesk';
+    font-weight: 300;
+}
+
+
+/*Insertion de l'arrière plan 1*/
+
+header {
+    /* background-color: aqua; */
+    /* width: 75%; */
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/*Design de la navigation*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+nav ul a:hover {
+    color: var(--yellow-color);
+}
+
+
+/*Design de la partie Hero de l'entete*/
+
+#Hero {
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+/*Design de la section batman personnage*/
+
+#batman-cinema,
+#nemesis,
+#les-allies,
+#justice-league {
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.personnage-head {
+    margin: auto;
+    text-align: justify;
+}
+
+.personnage-head .img1 {
+    margin-bottom: -50px;
+    margin-left: 100px;
+    width: 140px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.row .card {
+    margin: 0;
+    margin-top: 80px;
+    text-align: center;
+    width: 30%;
+}
+
+.row .card img {
+    width: 100%;
+}
+
+.personnage-head .img-allies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-allies img {
+    margin-right: -21%;
+    margin-top: -200px;
+}
+
+.personnage-head p {
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+
+.justice-league-img {
+    margin-left: -25%;
+}
+
+
+/*Design de la partie multi-media*/
+
+#multimedia .slider-multimedia {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image {
+    width: 100%;
+}
+
+#multimedia .slider-content {
+    padding: 15px;
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+    /* border-radius: 10px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia p {
+    font-size: 13px;
+}
+
+.image-bande-annonce {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.image-bande-annonce img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.multi-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multi-media button {
+    background-color: #FFFFFF00;
+}
+
+.titre-multimedia {
+    text-align: left;
+}
+
+#multimedia .yellow {
+    color: var(--yellow-color);
+}
+
+.reseaux-sociaux {
+    position: fixed;
+    top: 45vh;
+    right: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseaux-sociaux img {
+    margin-bottom: 10px;
+}
+
+
+/*Design de la partie contact formulaire*/
+
+#contact {
+    background-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4));
+    padding-bottom: 40px;
+}
+
+#contact .form {
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#contact .h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre {
+    display: block;
+    margin: 20px 0px;
+}
+
+#contact .form input[type='email'],
+#contact .form textarea,
+#contact .form select,
+#contact .form input[type=text] {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid rgba(192, 186, 186, 0.411);
+    background-color: transparent;
+    padding: 10px 0px;
+}
+
+#contact .form p,
+#contact .form select {
+    color: #C4C4C4;
+    margin: 20px 0px;
+}
+
+#contact .form input::placeholder,
+#contact .form textarea {
+    color: #c4c4c4ee;
+}
+
+::placeholder {
+    color: #8d8d87;
+    font-size: 15px;
+}
+
+.btn-group {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio'] {
+    opacity: 0;
+}
+
+.btn-group label {
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(69deg, #f8f084dc, var(--blue-color));
+    /* border-color: 69deg, #f8f084dc, var(--blue-color); */
+    border-image-slice: 1;
+}
+
+.btn-confirmer {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(60deg, #eddebf, #890008);
+    border: none;
+}
+
+
+/**la section citation */
+
+#citation {
+    margin: 90px;
+}
+
+#citation .citation-carte {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-auteur {
+    padding-top: 40px;
+    font-size: 14px;
+    font-family: 'rajdhani';
+}
+
+#citation .guillemet-open {
+    float: left;
+}
+
+#citation .guillemet-close {
+    float: right;
+}
+
+
+/*Design de footer*/
+
+footer {
+    margin-top: 100px;
+}
+
+footer.text-footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 50px;
+}
+
+footer .social-footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item {
+    padding: 15px;
+}
